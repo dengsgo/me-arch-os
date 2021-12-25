@@ -97,7 +97,7 @@ Use script 40 to use your current pacman cache - it will only download what is n
 
 You will find the iso in this folder:
 
- ~/Alci-Iso-Zen-Out
+ ~/Alci-Iso-Hardened-Out
 
 Burn it with etcher or other tools and use it.
 
