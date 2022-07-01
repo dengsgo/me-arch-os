@@ -1,4 +1,4 @@
-# ALCI DEVELOPMENT/DESKTOP
+# ALCI HARDENED
 
 # Arch Linux Calamares Installer or ALCI
 
