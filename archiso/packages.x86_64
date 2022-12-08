@@ -38,8 +38,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-#ipw2100-fw
-#ipw2200-fw
 irssi
 iw
 iwd
@@ -144,7 +142,7 @@ alci-calamares
 alci-calamares-config-hardened
 #alci-calamares-config-lts
 #alci-calamares-config-pure
-#alci-calamares-config-xanmod-edge
+#alci-calamares-config-xanmod
 #alci-calamares-config-zen
 xterm
 
@@ -270,6 +268,7 @@ linux-hardened
 linux-hardened-headers
 
 plasma-meta
+plasma-wayland-session
 dolphin
 konsole
 yakuake
