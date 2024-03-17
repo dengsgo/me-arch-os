@@ -281,7 +281,7 @@ dolphin
 konsole
 yakuake
 spectacle
-packagekit-qt5
+packagekit-qt6
 
 #grub theme
 alci-grub-theme-git
