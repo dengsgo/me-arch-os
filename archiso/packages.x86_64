@@ -277,7 +277,6 @@ linux-hardened
 linux-hardened-headers
 
 plasma-meta
-plasma-wayland-session
 dolphin
 konsole
 yakuake
