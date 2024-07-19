@@ -31,9 +31,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          cd $GITHUB_WORKSPACE/archiso
+          cd archiso
           pwd
-        working-directory: $GITHUB_WORKSPACE/archiso
+        working-directory: ./
 
       # Build ISO
       - name: Build ISO
