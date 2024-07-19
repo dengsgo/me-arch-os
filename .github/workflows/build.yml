@@ -39,7 +39,7 @@ jobs:
         shell: bash
       - run: cd archiso && mkarchiso -v .
         shell: bash
-      - run: sshpass -p $RSYNC_PASSWORD rsync -e ssh -rtv archiso/out/ mearch@frs.sourceforge.net:/home/frs/project/mearch/mearchiso
+      - run: sshpass -e rsync -rtv archiso/out/ mearch@frs.sourceforge.net:/home/frs/project/mearch/mearchiso
         shell: bash
         env:
           RSYNC_PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
