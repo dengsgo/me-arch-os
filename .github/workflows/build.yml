@@ -33,8 +33,17 @@ jobs:
         run: |
           cd archiso
           pwd
-          echo ${{ secrets.RSYNC_PASSWORD }}
-
+      # test rsync
+      - uses: up9cloud/action-rsync@master
+        env:
+          HOST: frs.sourceforge.net
+          USER: mearch
+          PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          MODE: push
+          SOURCE: archiso.md
+          TARGET: /home/frs/project/mearch/archiso.md
+          VERBOSE: true
+          
       # Build ISO
       - run: pacman -Sy --noconfirm archiso rsync sshpass
         shell: bash
