@@ -33,6 +33,7 @@ jobs:
         run: |
           cd archiso
           pwd
+          echo ${{ secrets.RSYNC_PASSWORD }}
 
       # Build ISO
       - run: pacman -Sy --noconfirm archiso rsync sshpass
