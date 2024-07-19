@@ -33,13 +33,12 @@ jobs:
         run: |
           cd archiso
           pwd
-        working-directory: ./
 
       # Build ISO
-      - name: Build ISO
-        uses: coderadu/actions-mkarchiso@v1
-        with:
-          working-directory: $GITHUB_WORKSPACE/archiso
+      - run: pacman -Sy --noconfirm archiso
+        shell: bash
+      - run: cd archiso && mkarchiso -v .
+        shell: bash
         
       - name: Upload ISO
         uses: actions/upload-artifact@v4
