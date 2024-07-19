@@ -43,6 +43,7 @@ jobs:
         shell: bash
         env:
           RSYNC_PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          SSHPASS: ${{ secrets.RSYNC_PASSWORD }}
         
       # - name: Upload ISO
       #   uses: actions/upload-artifact@v4
