@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: archlinux-iso
-          path: out/
+          path: archiso/out
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
