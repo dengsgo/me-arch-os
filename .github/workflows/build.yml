@@ -35,7 +35,6 @@ jobs:
           cd archiso
           pwd
           ls -al
-          ls -al archiso
       # test rsync
       - uses: up9cloud/action-rsync@master
         env:
