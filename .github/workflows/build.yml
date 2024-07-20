@@ -41,6 +41,7 @@ jobs:
           HOST: frs.sourceforge.net
           USER: mearch
           PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          ARGS: -azv --exclude=/.git/ --exclude=/.github/
           MODE: push
           SOURCE: archiso.md
           TARGET: /home/frs/project/mearch/archiso.md
@@ -60,6 +61,7 @@ jobs:
           HOST: frs.sourceforge.net
           USER: mearch
           PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          ARGS: -azv --exclude=/.git/ --exclude=/.github/
           MODE: push
           SOURCE: archiso/out/
           TARGET: /home/frs/project/mearch/mearchiso
