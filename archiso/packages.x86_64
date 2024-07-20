@@ -104,7 +104,6 @@ sudo
 syslinux
 systemd-resolvconf
 tcpdump
-terminus-font
 testdisk
 tmux
 tpm2-tools
@@ -193,7 +192,8 @@ neofetch
 ####################kde discover###########################
 archlinux-appstream-data
 packagekit-qt6
-#flatpak
+flatpak
+flatpak-kcm
 fwupd
 #######################vmware##########################
 #gtkmm

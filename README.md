@@ -1,6 +1,4 @@
-# ALCI HARDENED
-
-# Arch Linux Calamares Installer or ALCI
+# MeArch
 
 Use the correct version of Archiso to build the iso.
 
