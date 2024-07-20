@@ -4,7 +4,6 @@ arch-install-scripts
 archinstall
 b43-fwcutter
 base
-bcachefs-tools
 bind
 bolt
 brltty
@@ -30,7 +29,6 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -46,12 +44,11 @@ iw
 iwd
 jfsutils
 kitty-terminfo
-ldns
 less
 lftp
 libfido2
 libusb-compat
-#linux
+linux
 linux-atm
 linux-firmware
 linux-firmware-marvell
@@ -81,7 +78,6 @@ nvme-cli
 open-iscsi
 open-vm-tools
 openconnect
-openpgp-card-tools
 openssh
 openvpn
 partclone
@@ -100,7 +96,6 @@ rsync
 rxvt-unicode-terminfo
 screen
 sdparm
-sequoia-sq
 sg3_utils
 smartmontools
 sof-firmware
@@ -132,32 +127,13 @@ zsh
 
 # everything above comes from archiso releng folder
 #######################################################
-###                    ALCI                         ###
+###                    MeArch                       ###
 #######################################################
-
-#######################################################
-###  PACKAGES THAT ARE REMOVED AFTER INSTALLATION   ###
-###             VIA CALAMARES CONFIG                ###
-#######################################################
-
-#alci-dwm
-#alci-dwm-nemesis
+base-devel
+python-pip
+yay
 alci-calamares
-#alci-calamares-dev
-#alci-calamares-config
-#alci-calamares-config-btrfs
-#alci-calamares-config-dev
-alci-calamares-config-hardened
-#alci-calamares-config-lts
-#alci-calamares-config-pure
-#alci-calamares-config-xanmod
-#alci-calamares-config-zen
-xterm
-
-#######################################################
-###      PACKAGES THAT STAY AFTER INSTALLATION      ###
-#######################################################
-
+alci-calamares-config
 sddm
 bash-completion
 os-prober
@@ -169,118 +145,75 @@ xterm
 xorg-xrdb
 mkinitcpio-openswap
 
-##### you can also use nmtui from the terminal
+plasma
+dolphin
+konsole
+spectacle
+kate
+wqy-zenhei
+ark
+okular
+firefox
+firefox-i18n-zh-cn
+gwenview
+kwalletmanager
+ttf-jetbrains-mono
+imagemagick
+papirus-icon-theme
+alci-grub-theme-git
+#os-prober
+linux-headers
+kdialog
+timeshift
+unrar
+
+plymouth
+plymouth-kcm
+breeze-plymouth
+
+wget
+xdg-utils
+
+egl-wayland
+
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+gst-plugin-pipewire
+libpulse
+wireplumber
+####################networkmanager#########################
 networkmanager
 network-manager-applet
-
-#######################################################
-###                    EXTRAS                       ###
-#######################################################
-
-##### xorg applications
-
+##### xorg applications ####
 xorg-server
 xorg-apps
 neofetch
-
-
-##### Drivers for graphical cards
-
-#driver for virtualbox - xf86-video-vmware is dependency
-#systemctl enable vboxservice
-#systemctl start vboxservice
-#to have fullscreen
-#virtualbox-guest-utils
-
-#xf86-video-intel
-#xf86-video-amdgpu
-#xf86-video-nouveau
-
-#nvidia
-#nvidia-settings
-#nvidia-utils
-
-
-
-##### lightdm display manager
-
-#lightdm
-#lightdm-gtk-greeter
-
-##### sddm display manager
-
-#sddm
-#alci-sddm-plasma-archpaint
-
-##### gdm display manager
-
-#gdm
-
-
-
-##### want to have base-devel group
-
-base-devel
-
-##### want to have linux-headers
-
-#linux-headers
-
-
-
-##### want to have a desktop
-
-#test
-#xfce4
-#xfce4-goodies
-neofetch
-
-
-##### want to add/use the ArcoLinux repos
-
-#arcolinux-mirrorlist-git
-#arcolinux-keyring
-
-#test
-#arcolinux-wallpapers-git
-
-##### want to add/use the Chaotic repo
-
-#chaotic-mirrorlist
-#chaotic-keyring
-
-#test
-#colloid-cursors-git
-
-
-##### want to add/use your local repo packages
-##### create your packages and put them in the local repo
-
-#There is a copy of the local repo in your folder
-#Copy/paste it to your homefolder
-#Change the name erik to your own username
-#update the database
-
-#test
-#nemesis-wallpapers
-
-
-#### want have a btrfs format
-#### use alci-calamares-config-btrfs 
-
-#timeshift
-#grub-btrfs
-#timeshift-autosnap
-
-linux-hardened
-linux-hardened-headers
-
-plasma-meta
-dolphin
-konsole
-yakuake
-spectacle
+####################kde discover###########################
+archlinux-appstream-data
 packagekit-qt6
-
-#grub theme
-alci-grub-theme-git
+#flatpak
+fwupd
+#######################vmware##########################
+#gtkmm
+#gtkmm3
+#open-vm-tools
+#xf86-input-vmmouse
+#xf86-video-vmware
+#######################nvidia###########################
+#nvidia
+######################fcitx5############################
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+fcitx5
+fcitx5-chinese-addons
+fcitx5-gtk
+fcitx5-qt
+fcitx5-lua
+fcitx5-configtool
+fcitx5-material-color
+#######bluetooth########
+bluez
+bluedevil
