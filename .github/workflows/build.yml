@@ -30,10 +30,12 @@ jobs:
       - uses: actions/checkout@v4
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Dir check
         run: |
           cd archiso
           pwd
+          ls -al
+          ls -al archiso
       # test rsync
       - uses: up9cloud/action-rsync@master
         env:
@@ -46,10 +48,14 @@ jobs:
           VERBOSE: true
           
       # Build ISO
-      - run: pacman -Sy --noconfirm archiso rsync sshpass
+      - name: Install Dependencies Tools
+        run: pacman -Sy --noconfirm archiso rsync
         shell: bash
-      - run: cd archiso && mkarchiso -v .
+      - name: Build
+        run: cd archiso && mkarchiso -v .
         shell: bash
+      - name: Products Display
+        run: ls -al archiso/out
       - uses: up9cloud/action-rsync@master
         env:
           HOST: frs.sourceforge.net
@@ -59,12 +65,6 @@ jobs:
           SOURCE: archiso/out/
           TARGET: /home/frs/project/mearch/mearchiso
           VERBOSE: true
-          
-      # - run: sshpass -e rsync -rtv archiso/out/ mearch@frs.sourceforge.net:/home/frs/project/mearch/mearchiso
-      #   shell: bash
-      #   env:
-      #     RSYNC_PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
-      #     SSHPASS: ${{ secrets.RSYNC_PASSWORD }}
         
       # - name: Upload ISO
       #   uses: actions/upload-artifact@v4
@@ -73,7 +73,9 @@ jobs:
       #     path: archiso/out
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Dir Display
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          echo The Work is done. ISO is ready.
+          ls -al archiso/out
+          ls -al archiso
+
