@@ -131,7 +131,7 @@ zsh
 #######################################################
 base-devel
 python-pip
-yay
+#yay
 alci-calamares
 alci-calamares-config
 sddm
