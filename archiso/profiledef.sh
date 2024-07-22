@@ -22,6 +22,7 @@ file_permissions=(
   ["/root/.automated_script.sh"]="0:0:755"
   ["/root/.gnupg"]="0:0:700"
   ["/root/.config"]="0:0:700"
+  ["/root/initial-optimization-for-china.sh"]="0:0:755"
   ["/root/.config/dolphinrc"]="0:0:600"
   ["/root/.config/plasma-org.kde.plasma.desktop-appletsrc"]="0:0:600"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
