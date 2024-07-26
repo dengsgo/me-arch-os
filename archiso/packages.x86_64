@@ -193,7 +193,7 @@ archlinux-appstream-data
 packagekit-qt6
 flatpak
 flatpak-kcm
-fwupd
+#fwupd
 #######################vmware##########################
 #gtkmm
 #gtkmm3

@@ -18,6 +18,10 @@ sudo echo 'Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch' >> /et
 echo '>> update && upgrade <<'
 sudo pacman -Syyu
 
+# flatpak mirror
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
+
 # uninstall conflicting packages
 sudo pacman -Rsu xorg-bdftopcf xorg-mkfontscale
 
