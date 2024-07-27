@@ -121,12 +121,12 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         ALCI
-    shortProductName:    ALCI
+    productName:         MeArch
+    shortProductName:    MeArch
     version:             2023.01.1
     shortVersion:        2023.01.1
-    versionedName:       ALCI
-    shortVersionedName:  ALCI
+    versionedName:       MeArch
+    shortVersionedName:  MeArch
     bootloaderEntryName: Arch
 
 # These images are loaded from the branding module directory.

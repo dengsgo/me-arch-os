@@ -22,9 +22,6 @@ sudo pacman -Syyu
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
-# uninstall conflicting packages
-sudo pacman -Rsu xorg-bdftopcf xorg-mkfontscale
-
 # 配置输入法 https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland
 echo '>> fcitx5 gtk config <<'
 if [[ -z $(grep 'gtk-im-module=fcitx' ~/.gtkrc-2.0)  ]]; then
