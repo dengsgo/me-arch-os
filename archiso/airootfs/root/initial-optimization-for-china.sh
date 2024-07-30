@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo '>> script check <<'
+sudo echo 'sudo'
+echo "User: $SUDO_USER"
+echo "Home: /home/$SUDO_USER"
+
 # change mirrors
 # reflector --country China --protocol http --latest 3 --save /etc/pacman.d/mirrorlist
 echo '>> use china mirrors <<'
@@ -24,16 +29,16 @@ sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub
 
 # 配置输入法 https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland
 echo '>> fcitx5 gtk config <<'
-if [[ -z $(grep 'gtk-im-module=fcitx' ~/.gtkrc-2.0)  ]]; then
-echo 'gtk-im-module="fcitx"' >> ~/.gtkrc-2.0
+if [[ -z $(grep 'gtk-im-module=fcitx' /home/$SUDO_USER/.gtkrc-2.0)  ]]; then
+echo 'gtk-im-module="fcitx"' >> /home/$SUDO_USER/.gtkrc-2.0
 fi
 
-if [[ -z $(grep 'gtk-im-module=fcitx' ~/.config/gtk-3.0/settings.ini)  ]]; then
-echo 'gtk-im-module=fcitx' >> ~/.config/gtk-3.0/settings.ini
+if [[ -z $(grep 'gtk-im-module=fcitx' /home/$SUDO_USER/.config/gtk-3.0/settings.ini)  ]]; then
+echo 'gtk-im-module=fcitx' >> /home/$SUDO_USER/.config/gtk-3.0/settings.ini
 fi
 
-if [[ -z $(grep 'gtk-im-module=fcitx' ~/.config/gtk-4.0/settings.ini)  ]]; then
-echo 'gtk-im-module=fcitx' >> ~/.config/gtk-4.0/settings.ini
+if [[ -z $(grep 'gtk-im-module=fcitx' /home/$SUDO_USER/.config/gtk-4.0/settings.ini)  ]]; then
+echo 'gtk-im-module=fcitx' >> /home/$SUDO_USER/.config/gtk-4.0/settings.ini
 fi
 
 # fix 
