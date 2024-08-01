@@ -151,6 +151,7 @@ spectacle
 kate
 ark
 okular
+partitionmanager
 firefox
 firefox-i18n-zh-cn
 gwenview
@@ -216,3 +217,5 @@ fcitx5-material-color
 #######bluetooth########
 bluez
 bluedevil
+########power###########
+power-profiles-daemon
