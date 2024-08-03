@@ -1,8 +1,10 @@
 # MeArch
 
-[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/latest/download)  [![Actions](https://github.com/dengsgo/mearch/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/mearch/actions)
+[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/latest/download)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/mearch/actions)
 
-## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch !
+## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch ! 
+
+A rolling distribution system based on Arch Linux, with a graphical interface for easy installation of Arch !
 
 [![Download MeArch](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/mearch/files/latest/download)
 
@@ -17,6 +19,18 @@
 - 专注于 Wayland   
 - 特定国家和地区特殊优化，以更好适应用户习惯  
 - Nvidia 专用驱动 HOOK (Beta)
+
+--------  
+  
+- Based on Arch Linux, it provides an out-of-the-box desktop environment.  
+- Simple and friendly installation wizard, no need for cumbersome command line, just point and click to install to your computer.  
+- No redundant software, only the minimum basic software is attached to meet customization needs.    
+- No distro ID tampering, it's Arch Linux installed on your computer !   
+- Everything (system, components and software) is updated on a rolling basis!  
+- Focused on Kde Plasma desktop and software  
+- Focus on Wayland   
+- Country-specific and region-specific optimizations to better fit user habits  
+- Nvidia-specific driver HOOK (Beta)
 
 ## TODO
 
