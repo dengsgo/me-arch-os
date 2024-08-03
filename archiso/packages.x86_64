@@ -165,6 +165,7 @@ linux-headers
 kdialog
 timeshift
 unrar
+ufw
 
 plymouth
 plymouth-kcm
