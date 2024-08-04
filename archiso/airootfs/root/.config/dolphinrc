@@ -1,15 +1,7 @@
 [General]
 ShowSelectionToggle=false
 Version=202
-ViewPropsTimestamp=2024,7,20,14,31,12.856
-
-[KFileDialog Settings]
-Places Icons Auto-resize=false
-Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
 ToolBarsMovable=Disabled
-
-[PreviewSettings]
-Plugins=appimagethumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,kraorathumbnail,windowsimagethumbnail,windowsexethumbnail,opendocumentthumbnail,svgthumbnail,cursorthumbnail,imagethumbnail,fontthumbnail,directorythumbnail,audiothumbnail
