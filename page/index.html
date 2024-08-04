@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeArch - 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch !</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        .centerBody {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .header {
+            width: auto;
+            height: 320px;
+            background: url(./bg.png) no-repeat center center;
+            color: white;
+            text-shadow: black 1px 1px 1px;
+        }
+        .headerBody h1 {
+            line-height: 6;
+        }
+        .headerBody h2 {
+            line-height: 2;
+            padding-bottom: 16px;
+        }
+        .version {
+            display: flex;
+        }
+        .flex1 {
+            display: flex;
+            flex: 1;
+            align-content: center;
+            justify-content: center;
+        }
+        .flex2 {
+            display: flex;
+            flex: 2;
+            align-content: center;
+            justify-content: center;
+            align-items: center; 
+        }
+        .sectionTitle {
+            padding: 24px 0px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 2;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-color: #555555;
+            text-decoration-style: dotted;
+        }
+        .snapshot {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .snapshot img {
+            width: 480px;
+            height: 300px;
+            padding: 10px;
+        }
+        .ul {padding-left: 24px; line-height: 1.6;}
+        .btn {
+            display: flex; align-self: right; margin-right: 12px; padding: 0px 40px; line-height: 2.2; background-color: white; text-decoration: none; color: #84d3dd; border-radius: 3px; 
+        }
+        .btn:hover {
+            box-shadow: #555555 0px 0px 6px;
+        }
+    </style>
+</head>
+<body style="background-color: #fefefe;">
+    <header class="header">
+        <div class="centerBody headerBody" style="text-align: center;">
+            <h1>MeArch OS</h1>
+            <h2>基于 Arch Linux 的滚动(发行版)系统，使用图形化界面简易安装 Arch !</h2> 
+            <div class="version">
+                <div class="flex2" style="justify-content: right;">
+                    <a href="https://sourceforge.net/projects/mearch/files/latest/download" class="btn">下 载</a>
+                </div>
+                <div class="flex2" style="flex: 0;">
+                    <a href="https://sourceforge.net/projects/mearch/files/latest/download"><img alt="Download MeArch" src="https://img.shields.io/sourceforge/dt/mearch.svg" ></a> &nbsp;
+                    <a href="https://github.com/dengsgo/mearch/actions"><img src="https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg" alt="Actions"></a>
+                </div>
+                <div class="flex2" style="justify-content: left; padding-left: 12px;">
+                    <span style="font-size: 12px;">最新版本：2024.08.04</span>
+                </div>
+            </div> 
+        </div>    
+    </header>
+
+    <section class="centerBody">
+        <h2 class="sectionTitle">MeArch 是什么？</h2>
+        <div>
+            <span>MeArch 是基于 Arch Linux 的滚动(发行版)系统，它有一个 KDE Plasma 桌面环境，可以使用图形化界面来简易的安装 Arch 系统。</span>
+        </div>
+
+        <h2 class="sectionTitle">MeArch 有哪些特性？</h2>
+
+        <ul class="ul">
+            <li>基于 Arch Linux ，提供开箱即用的桌面环境</li>
+            <li>简单友好的安装向导，无需繁琐的命令行，点点鼠标即可安装到你的电脑</li>
+            <li>无冗余软件，只附加最低的基础软件，满足定制化需求</li>
+            <li>不篡改发行版 ID，安装到你电脑上的是 Arch Linux !</li>
+            <li>一切（系统、组件和软件）都是滚动更新的</li>
+            <li>专注于 KDE Plasma 桌面和软件</li>
+            <li>专注于 Wayland</li>
+            <li>特定国家和地区特殊优化，以更好适应用户习惯</li>
+            <li>Nvidia 专用驱动 HOOK (Beta)</li>
+        </ul>
+
+        <h2 class="sectionTitle">MeArch 截图</h2>
+
+        <div class="snapshot">
+            <img src="./boot.jpg" alt="MeArch" />
+            <img src="./login.jpg" alt="MeArch" />
+            <img src="./system.jpg" alt="MeArch" />
+            <img src="./menu.jpg" alt="MeArch" />
+        </div>
+        
+        <h2 class="sectionTitle">支持</h2>
+
+        <ul class="ul">
+            <li>GitHub: <a href="https://github.com/dengsgo/me-arch-os">https://github.com/dengsgo/me-arch-os</a></li>
+            <li>Issue: <a href="https://github.com/dengsgo/me-arch-os/issues">https://github.com/dengsgo/me-arch-os/issues</a></li>
+        </ul>
+    </section>
+
+    <footer class="centerBody" style="padding: 50px 0px;">
+        <div class="version">
+            <div class="flex2" style="justify-content: right;">
+                <a href="https://sourceforge.net/projects/mearch/files/latest/download" class="btn" style="border: black 1px solid; color: black;">下 载</a>
+            </div>
+            <div class="flex2" style="flex: 0;">
+                <a href="https://sourceforge.net/projects/mearch/files/latest/download"><img alt="Download MeArch" src="https://img.shields.io/sourceforge/dt/mearch.svg" ></a> &nbsp;
+                <a href="https://github.com/dengsgo/mearch/actions"><img src="https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg" alt="Actions"></a>
+            </div>
+            <div class="flex2" style="justify-content: left; padding-left: 12px;">
+                <span style="font-size: 12px;">最新版本：2024.08.04</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
