@@ -1,7 +1,0 @@
-[General]
-ShowSelectionToggle=false
-Version=202
-
-[MainWindow]
-MenuBar=Disabled
-ToolBarsMovable=Disabled
