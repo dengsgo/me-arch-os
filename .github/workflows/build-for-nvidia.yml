@@ -1,0 +1,86 @@
+# This is a basic workflow to help you get started with Actions
+
+name: BuildNvidiaISO
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    environment: OL
+    container: 
+      image: archlinux
+      options: --privileged
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Dir check
+        run: |
+          cd archiso
+          pwd
+          ls -al
+      # test rsync
+      - uses: up9cloud/action-rsync@master
+        env:
+          HOST: frs.sourceforge.net
+          USER: mearch
+          PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          ARGS: -azv --exclude=/.git/ --exclude=/.github/
+          MODE: push
+          SOURCE: README.md
+          TARGET: /home/frs/project/mearch/README.md
+          VERBOSE: true
+
+      # prepare nvidia  
+      - name: Prepare Nvidia
+        run: cp -rf archiso/nvidia-patch/etc/* archiso/airootfs/etc/ && cat archiso/nvidia-patch/packages.x86_64.append >> archiso/packages.x86_64 && sed -i 's/iso_name="archlinux"/iso_name="archlinux-for-nvidia"/g' archiso/profiledef.sh
+        shell: bash
+      # Build ISO
+      - name: Install Dependencies Tools
+        run: pacman -Sy --noconfirm archiso rsync
+        shell: bash
+      - name: Build
+        run: cd archiso && mkarchiso -v .
+        shell: bash
+      - name: Products Display
+        run: ls -al archiso/out
+      - uses: up9cloud/action-rsync@master
+        env:
+          HOST: frs.sourceforge.net
+          USER: mearch
+          PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          ARGS: -azv --exclude=/.git/ --exclude=/.github/
+          MODE: push
+          SOURCE: archiso/out/
+          TARGET: /home/frs/project/mearch/mearchiso
+          VERBOSE: true
+        
+      # - name: Upload ISO
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: archlinux-iso
+      #     path: archiso/out
+
+      # Runs a set of commands using the runners shell
+      - name: Dir Display
+        run: |
+          echo The Work is done. ISO is ready.
+          ls -al archiso/out
+          ls -al archiso
+
