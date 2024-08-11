@@ -25,6 +25,7 @@ file_permissions=(
   ["/root/.config"]="0:0:700"
   ["/root/initial-optimization-for-china.sh"]="0:0:777"
   ["/root/install-nvidia-after-hook.sh"]="0:0:777"
+  ["/root/.config/plasmashellrc"]="0:0:666"
   ["/root/.config/kactivitymanagerdrc"]="0:0:666"
   ["/root/.config/plasma-org.kde.plasma.desktop-appletsrc"]="0:0:666"
   ["/usr/local/bin/choose-mirror"]="0:0:755"
