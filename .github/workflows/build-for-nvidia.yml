@@ -49,7 +49,7 @@ jobs:
 
       # prepare nvidia  
       - name: Prepare Nvidia
-        run: cp -rf archiso/nvidia-patch/etc/* archiso/airootfs/etc/ && cat archiso/nvidia-patch/packages.x86_64.append >> archiso/packages.x86_64 && sed -i 's/iso_name="archlinux"/iso_name="archlinux-for-nvidia"/g' archiso/profiledef.sh
+        run: cp -rf archiso/nvidia-patch/etc/* archiso/airootfs/etc/ && cat archiso/nvidia-patch/packages.x86_64.append >> archiso/packages.x86_64 && sed -i 's/iso_name="archlinux"/iso_name="archlinux-for-nvidia"/g' archiso/profiledef.sh && cat archiso/nvidia-patch/etc.calamares.modules.shellprocess-final.conf.append >> archiso/airootfs/etc/calamares/modules/shellprocess-final.conf
         shell: bash
       # Build ISO
       - name: Install Dependencies Tools
