@@ -1,0 +1,3 @@
+    - "-sed -i 's/ kms / /g' /etc/mkinitcpio.conf"
+    - "-sed -i 's/MODULES=()/MODULES=(nvidia nvidia_modeset nvidia_uvm nvidia_drm)/g' /etc/mkinitcpio.conf"
+    - "-/usr/bin/mkinitcpio -P"
