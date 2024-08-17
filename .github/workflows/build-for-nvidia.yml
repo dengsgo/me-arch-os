@@ -47,6 +47,9 @@ jobs:
           TARGET: /home/frs/project/mearch/README.md
           VERBOSE: true
 
+      - name: Install Dependencies Tools
+        run: pacman -Sy --noconfirm archiso rsync wget
+        shell: bash
       # prepare nvidia  
       - name: Prepare Nvidia
         run: chmod +x archiso/nvidia-patch/nvidia-patch-action-shell.sh && ./archiso/nvidia-patch/nvidia-patch-action-shell.sh
@@ -56,9 +59,6 @@ jobs:
         run: chmod +x archiso/airootfs/root/theme-prepare.sh && ./archiso/airootfs/root/theme-prepare.sh
         shell: bash
       # Build ISO
-      - name: Install Dependencies Tools
-        run: pacman -Sy --noconfirm archiso rsync
-        shell: bash
       - name: Build
         run: cd archiso && mkarchiso -v .
         shell: bash
