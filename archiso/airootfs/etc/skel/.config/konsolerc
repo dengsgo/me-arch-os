@@ -1,0 +1,28 @@
+MenuBar=Disabled
+
+[Desktop Entry]
+DefaultProfile=MeArch.profile
+
+[General]
+ConfigVersion=1
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+IconSize=16
+
+[MainWindow][Toolbar sessionToolbar]
+IconSize=16
+
+[TabBar]
+ExpandTabWidth=true
+
+[Toolbar mainToolBar]
+IconSize=16
+
+[Toolbar sessionToolbar]
+IconSize=16
+
+[UiSettings]
+ColorScheme=

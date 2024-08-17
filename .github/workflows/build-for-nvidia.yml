@@ -51,6 +51,10 @@ jobs:
       - name: Prepare Nvidia
         run: chmod +x archiso/nvidia-patch/nvidia-patch-action-shell.sh && ./archiso/nvidia-patch/nvidia-patch-action-shell.sh
         shell: bash
+      # prepare   
+      - name: Prepare
+        run: chmod +x archiso/airootfs/root/theme-prepare.sh && ./archiso/airootfs/root/theme-prepare.sh
+        shell: bash
       # Build ISO
       - name: Install Dependencies Tools
         run: pacman -Sy --noconfirm archiso rsync

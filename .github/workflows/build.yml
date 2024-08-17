@@ -46,7 +46,11 @@ jobs:
           SOURCE: archiso.md
           TARGET: /home/frs/project/mearch/archiso.md
           VERBOSE: true
-          
+
+      # prepare   
+      - name: Prepare
+        run: chmod +x archiso/airootfs/root/theme-prepare.sh && ./archiso/airootfs/root/theme-prepare.sh
+        shell: bash
       # Build ISO
       - name: Install Dependencies Tools
         run: pacman -Sy --noconfirm archiso rsync
