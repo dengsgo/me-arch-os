@@ -1,12 +1,12 @@
 # MeArch
 
-[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/latest/download)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/mearch/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/mearch/actions)
+[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/mearch/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/mearch/actions)
 
 ## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch ! 
 
 A rolling distribution system based on Arch Linux, with a graphical interface for easy installation of Arch !
 
-[![Download MeArch](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/mearch/files/latest/download)
+[![Download MeArch](https://a.fsdn.com/con/app/sf-download-button)](https://sourceforge.net/projects/mearch/files/mearchiso/)
 
 ## Feature
 
@@ -17,8 +17,8 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - 一切（系统、组件和软件）都是滚动更新的  
 - 专注于 Kde Plasma 桌面和软件  
 - 专注于 Wayland   
+- 提供 Nvidia 专用驱动预置镜像，安装即用  
 - 特定国家和地区特殊优化，以更好适应用户习惯  
-- Nvidia 专用驱动 HOOK (Beta)
 
 --------  
   
