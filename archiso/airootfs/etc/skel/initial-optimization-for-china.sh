@@ -14,10 +14,11 @@ sudo echo 'Server = http://mirrors.zju.edu.cn/archlinux/$repo/os/$arch' >> /etc/
 sudo echo 'Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
 
 # archlinuxcn
-#sudo echo '[archlinuxcn]' >> /etc/pacman.conf
-#sudo echo 'Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
-#sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-
+if [[ -z $(grep '[archlinuxcn]' /etc/pacman.conf)  ]]; then
+sudo pacman-key --lsign-key "lilac@build.archlinuxcn.org"
+sudo echo '[archlinuxcn]' >> /etc/pacman.conf
+sudo echo 'Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
+fi
 
 # update
 echo '>> update && upgrade <<'
