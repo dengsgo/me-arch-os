@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "maire.nunez@gmail.com",
+                "Name": "mrmaire"
+            }
+        ],
+        "Category": "",
+        "Description": "Yaplass(Yet Another Plasma6 Splashscreen) - Archlinux",
+        "Id": "YaplassArchLinux-Plasma6",
+        "License": "GPLv3",
+        "Name": "Yet Another Plasma 6 Splashscreen Archlinux",
+        "Website": ""
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-Plasma-APIVersion": "2"
+}
+
