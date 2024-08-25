@@ -1,6 +1,6 @@
 # MeArch
 
-[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/mearch/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/mearch/actions)
+[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)
 
 ## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch ! 
 
@@ -45,7 +45,9 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - Fork the [alci-iso-hardened](https://github.com/arch-linux-calamares-installer/alci-iso-hardened) - [ GPL-3.0 license](https://github.com/arch-linux-calamares-installer/alci-iso-hardened/blob/main/LICENSE)  
 - [distro-grub-themes](https://github.com/AdisonCavani/distro-grub-themes) - [GPL-3.0 license](https://github.com/AdisonCavani/distro-grub-themes/blob/master/LICENSE)  
 - [archiso](https://gitlab.archlinux.org/archlinux/archiso) - [GPL-3.0 license](https://gitlab.archlinux.org/archlinux/archiso/-/blob/master/LICENSE?ref_type=heads)  
-- [core-packages](https://github.com/archcraft-os/core-packages) - [GPL-3.0 license](https://github.com/archcraft-os/core-packages/blob/main/LICENSE)
+- [core-packages](https://github.com/archcraft-os/core-packages) - [GPL-3.0 license](https://github.com/archcraft-os/core-packages/blob/main/LICENSE)  
+- [Qogir-icon-theme](https://github.com/vinceliuice/Qogir-icon-theme) - [GPL-3.0 license](https://github.com/vinceliuice/Qogir-icon-theme?tab=GPL-3.0-1-ov-file#readme)  
+- [Bibata_Cursor](https://github.com/ful1e5/Bibata_Cursor) - [GPL-3.0 license](https://github.com/ful1e5/Bibata_Cursor/blob/main/LICENSE)  
 - [alci-calamares-config](https://github.com/arch-linux-calamares-installer/alci-calamares-config)  
 - Base on [ArchLinux](https://archlinux.org/)  
 
