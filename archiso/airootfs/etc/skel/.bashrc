@@ -13,3 +13,6 @@ PS1='[\u@\h \W]\$ '
 #ALCI
 ########
 alias evb='sudo systemctl enable --now vboxservice.service'
+
+# enable starship
+eval "$(starship init bash)"

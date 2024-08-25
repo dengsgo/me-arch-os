@@ -215,6 +215,9 @@ fcitx5-qt
 fcitx5-lua
 fcitx5-configtool
 fcitx5-material-color
+#######konsole########
+ttf-hack-nerd
+starship
 #######bluetooth########
 bluez
 bluedevil
