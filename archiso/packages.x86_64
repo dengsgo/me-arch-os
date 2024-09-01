@@ -205,9 +205,9 @@ flatpak-kcm
 #######################nvidia###########################
 #nvidia
 ######################fcitx5############################
+noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
-noto-fonts-extra
 fcitx5
 fcitx5-chinese-addons
 fcitx5-gtk
