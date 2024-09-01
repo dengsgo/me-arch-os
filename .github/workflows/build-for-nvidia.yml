@@ -48,7 +48,7 @@ jobs:
           VERBOSE: true
 
       - name: Install Dependencies Tools
-        run: pacman -Sy --noconfirm archiso rsync wget
+        run: pacman -Sy --noconfirm archiso rsync wget archlinuxcn-keyring
         shell: bash
       # prepare nvidia  
       - name: Prepare Nvidia

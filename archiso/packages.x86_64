@@ -131,8 +131,9 @@ zsh
 base-devel
 python-pip
 #yay
-alci-calamares
+#alci-calamares
 #alci-calamares-config
+calamares
 sddm
 bash-completion
 os-prober
