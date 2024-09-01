@@ -48,7 +48,7 @@ jobs:
           VERBOSE: true
 
       - name: Install Dependencies Tools
-        run: pacman -Sy --noconfirm archiso rsync wget && sudo pacman-key --lsign-key "lilac@build.archlinuxcn.org"
+        run: pacman -Sy --noconfirm archiso rsync wget
         shell: bash
       # prepare   
       - name: Prepare
