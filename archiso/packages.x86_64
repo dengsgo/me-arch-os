@@ -181,9 +181,13 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+pipewire-audio
+pipewire-session-manager
 gst-plugin-pipewire
-libpulse
 wireplumber
+libpulse
+lib32-pipewire
+lib32-pipewire-jack
 ####################networkmanager#########################
 networkmanager
 network-manager-applet
