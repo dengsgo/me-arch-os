@@ -24,6 +24,14 @@ mv *.pkg.tar.zst ../x86_64/
 pwd
 cd ../..
 
+echo "==== Building ckbcomp ====="
+cd repo/ckbcomp && \
+makepkg -s --noconfirm && \
+mv *.pkg.tar.zst ../x86_64/
+
+pwd
+cd ../..
+
 echo "==== Arch Directory ====="
 ls -al repo/x86_64
 
