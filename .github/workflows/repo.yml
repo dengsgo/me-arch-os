@@ -28,12 +28,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Docker Build
-        run: cd repo && docker build -t archpkgbuilder:v1 .
+        run: cd repo && docker build -t archpkgbuilder:v1 . && docker images
         shell: bash
       - name: Building
         run: |
           chmod +x repo/build-pkgs-and-pub-repo.sh
-          docker run -it --rm -v $(pwd):/app:rw archpkgbuilder:v1 /bin/bash -c 'cd /app && ./repo/build-pkgs-and-pub-repo.sh'
+          docker run -it --rm -v $(pwd):/app:rw docker.io/library/archpkgbuilder:v1 /bin/bash -c 'cd /app && ./repo/build-pkgs-and-pub-repo.sh'
         shell: bash
       - name: Show
         run: |
