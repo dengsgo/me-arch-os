@@ -38,7 +38,7 @@ jobs:
         shell: bash
       - name: Show
         run: |
-          ls -al mearch-os-repo.tar.gz
+          ls -al repo/mearch-os-repo.tar.gz
       # rsync
       - uses: up9cloud/action-rsync@master
         env:
