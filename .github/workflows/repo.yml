@@ -33,7 +33,7 @@ jobs:
       - name: Building
         run: |
           chmod +x repo/build-pkgs-and-pub-repo.sh
-          docker run --rm -v $(pwd):/app:rw archpkgbuilder:v1 /bin/bash -c 'cd /app && ./repo/build-pkgs-and-pub-repo.sh'
+          docker run --rm -v $(pwd):/app archpkgbuilder:v1 /bin/bash -c 'cd /app && ./repo/build-pkgs-and-pub-repo.sh'
         shell: bash
       - name: Show
         run: |
