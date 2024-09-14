@@ -2,7 +2,7 @@
 FROM archlinux:base-devel
 RUN pacman-key --init
 #RUN pacman-key --lsign-key "lilac@build.archlinuxcn.org"
-RUN echo 'Server = https://mirrors.cernet.edu.cn/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist 
+#RUN echo 'Server = https://mirrors.cernet.edu.cn/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist 
 RUN echo '[archlinuxcn]' >> /etc/pacman.conf 
 RUN echo 'Server = https://mirrors.cernet.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
