@@ -47,7 +47,7 @@ jobs:
           PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
           ARGS: -azv --exclude=/.git/ --exclude=/.github/
           MODE: push
-          SOURCE: mearch-os-repo.tar.gz
+          SOURCE: repo/mearch-os-repo.tar.gz
           TARGET: /home/frs/project/mearch/package/mearch-os-repo.tar.gz
           VERBOSE: true
         
