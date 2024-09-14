@@ -1,6 +1,6 @@
 # MeArch
 
-[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)
+[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![RepoBuild](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml/badge.svg)](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml)
 
 ## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch ! 
 
@@ -30,7 +30,7 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - Focused on Kde Plasma desktop and software  
 - Focus on Wayland   
 - Country-specific and region-specific optimizations to better fit user habits  
-- Nvidia-specific driver HOOK (Beta)
+- Provides Nvidia-specific driver pre-installation images for immediate use 
 
 ## TODO
 
@@ -49,5 +49,6 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - [Qogir-icon-theme](https://github.com/vinceliuice/Qogir-icon-theme) - [GPL-3.0 license](https://github.com/vinceliuice/Qogir-icon-theme?tab=GPL-3.0-1-ov-file#readme)  
 - [Bibata_Cursor](https://github.com/ful1e5/Bibata_Cursor) - [GPL-3.0 license](https://github.com/ful1e5/Bibata_Cursor/blob/main/LICENSE)  
 - [alci-calamares-config](https://github.com/arch-linux-calamares-installer/alci-calamares-config)  
+- [alci-pkgbuild](https://github.com/arch-linux-calamares-installer/alci-pkgbuild)  
 - Base on [ArchLinux](https://archlinux.org/)  
 
