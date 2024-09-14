@@ -24,13 +24,17 @@ mv *.pkg.tar.zst ../x86_64/
 pwd
 cd ../..
 
-echo "==== Building ckbcomp ====="
-cd repo/ckbcomp && \
-makepkg -s --noconfirm && \
-mv *.pkg.tar.zst ../x86_64/
+# echo "==== Building ckbcomp ====="
+# cd repo/ckbcomp && \
+# makepkg -s --noconfirm && \
+# mv *.pkg.tar.zst ../x86_64/
 
-pwd
-cd ../..
+# pwd
+# cd ../..
+
+echo "==== Download ckbcomp ====="
+sudo pacman -Sw --noconfirm ckbcomp
+cp /var/cache/pacman/pkg/ckbcomp-1.230-2-any.pkg.tar.zst repo/x86_64/
 
 echo "==== Arch Directory ====="
 ls -al repo/x86_64
