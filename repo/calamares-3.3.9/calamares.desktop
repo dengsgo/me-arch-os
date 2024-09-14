@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install System
+Name[da]=Install System
+Name[zh]=安装系统
+Name[zh_cn]=安装系统
+GenericName=Live Installer
+GenericName[da]=Live-installationsprogram
+Comment=Install the operating system to disk
+Comment[da]=Installer styresystemet på disk
+Comment[de]=MeArch Linux installieren
+Comment[zh]=安装MeArch系统
+Comment[zh_cn]=安装MeArch系统
+Exec=/usr/bin/calamares_polkit %f
+Icon=calamares
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Qt;System;
