@@ -39,7 +39,7 @@ jobs:
       - name: Show
         run: |
           ls -al repo/mearch-os-repo.tar.gz
-      # rsync
+      # rsync repo tar.gz
       - uses: up9cloud/action-rsync@master
         env:
           HOST: frs.sourceforge.net
@@ -49,6 +49,17 @@ jobs:
           MODE: push
           SOURCE: repo/mearch-os-repo.tar.gz
           TARGET: /home/frs/project/mearch/package/mearch-os-repo.tar.gz
+          VERBOSE: true
+      # rsync x86_64 list
+      - uses: up9cloud/action-rsync@master
+        env:
+          HOST: frs.sourceforge.net
+          USER: mearch
+          PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
+          ARGS: -azv --exclude=/.git/ --exclude=/.github/
+          MODE: push
+          SOURCE: repo/x86_64/
+          TARGET: /home/frs/project/mearch/package/x86_64/
           VERBOSE: true
         
       # - name: Upload ISO
