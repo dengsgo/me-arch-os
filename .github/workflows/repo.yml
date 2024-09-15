@@ -50,6 +50,10 @@ jobs:
           SOURCE: repo/mearch-os-repo.tar.gz
           TARGET: /home/frs/project/mearch/package/mearch-os-repo.tar.gz
           VERBOSE: true
+      # fix permission
+      - name: Fix Permission Repo
+        run: chmod -R 777 repo/x86_64
+        shell: bash
       # rsync x86_64 list
       - uses: up9cloud/action-rsync@master
         env:
