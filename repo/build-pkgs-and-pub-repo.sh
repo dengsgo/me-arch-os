@@ -50,6 +50,8 @@ echo "==== Repo TAR ====="
 cd repo && \
 tar zcvf $tar_target x86_64
 
+chmod -R 777 x86_64
+
 echo "==== Show: mearch-os-repo.tar.gz ====="
 ls -al $tar_target
 
