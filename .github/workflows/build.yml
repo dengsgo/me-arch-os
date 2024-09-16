@@ -34,7 +34,7 @@ jobs:
       # setup
       - name: Set Target Folder
         run: |
-          TARGET_FOLDER="x86_64-$(TZ='Asia/Shanghai' date +'%Y-%m')"
+          TARGET_FOLDER="x86_64-$(TZ='Asia/Shanghai' date +'%Y.%m')"
           echo "TARGET_FOLDER=$TARGET_FOLDER" >> $GITHUB_ENV
 
       # Runs a single command using the runners shell
