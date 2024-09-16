@@ -31,9 +31,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
+      # setup
+      - name: Set Target Folder
+        run: |
+          TARGET_FOLDER="x86_64-$(TZ='Asia/Shanghai' date +'%Y-%m')"
+          echo "TARGET_FOLDER=$TARGET_FOLDER" >> $GITHUB_ENV
+
       # Runs a single command using the runners shell
       - name: Dir check
         run: |
+          env
           cd archiso
           pwd
           ls -al
@@ -70,7 +77,7 @@ jobs:
           ARGS: -azv --exclude=/.git/ --exclude=/.github/
           MODE: push
           SOURCE: archiso/out/
-          TARGET: /home/frs/project/mearch/mearchiso
+          TARGET: /home/frs/project/mearch/mearchiso/${{ env.TARGET_FOLDER }}
           VERBOSE: true
         
       # - name: Upload ISO
