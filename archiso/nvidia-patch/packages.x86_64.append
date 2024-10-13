@@ -1,5 +1,6 @@
 ########nvidia###########
-nvidia
+#nvidia
+nvidia-open
 nvidia-utils
 nvidia-settings
 lib32-nvidia-utils
