@@ -9,7 +9,7 @@ echo "Cursor Icon Path: archiso/airootfs/etc/skel/.local/share/icons/"
 ls -al archiso/airootfs/etc/skel/.local/share/icons/Bibata-Modern-Ice
 
 # Icon
-wget -O Qogir.tar.xz https://sourceforge.net/projects/mearch/files/theme/Icons-01-Qogir-2024-07-29.tar.xz/download
+wget -O Qogir.tar.xz https://sourceforge.net/projects/mearch/files/theme/Icons-01-Qogir-2024-10-11.tar.xz/download
 tar -Jxf Qogir.tar.xz
 cp -rf Qogir archiso/airootfs/etc/skel/.local/share/icons/
 ls -al archiso/airootfs/etc/skel/.local/share/icons/
