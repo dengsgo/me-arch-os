@@ -15,6 +15,6 @@ sha256sums=('SKIP')
 
 package() {
 	mkdir -p ${pkgdir}/usr/share/icons
-	#cp -rf ${srcdir}/Qogir ${pkgdir}/usr/share/icons/
-	install -Dm 755 ${srcdir}/Qogir ${pkgdir}/usr/share/icons/
+	cp -rf ${srcdir}/Qogir ${pkgdir}/usr/share/icons/
+	chmod -R 755 ${pkgdir}/usr/share/icons
 }
