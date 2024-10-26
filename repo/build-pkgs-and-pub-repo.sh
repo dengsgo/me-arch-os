@@ -2,43 +2,25 @@
 repo_db="mearch-os.db.tar.gz"
 tar_target="mearch-os-repo.tar.gz"
 
+buildpkg() {
+    echo "==== Building $1 ====="
+    cd repo/$1 && \
+    makepkg -s --noconfirm && \
+    mv *.pkg.tar.zst ../x86_64/
+    pwd
+    cd ../..
+}
+
 # repo arch directory
 mkdir -p repo/x86_64
 
-echo "==== Building cursor-bibata ====="
-cd repo/cursor-bibata && \
-makepkg -s --noconfirm && \
-mv *.pkg.tar.zst ../x86_64/
-
-pwd
-cd ../..
-
-echo "==== Building icons-qogir ====="
-cd repo/icons-qogir && \
-makepkg -s --noconfirm && \
-mv *.pkg.tar.zst ../x86_64/
-
-pwd
-cd ../..
-
-echo "==== Building calamares ====="
-cd repo/calamares-3.3.9 && \
-makepkg -s --noconfirm && \
-mv *.pkg.tar.zst ../x86_64/
-
-pwd
-cd ../..
+buildpkg "cursor-bibata"
+buildpkg "icons-qogir"
+buildpkg "calamares-3.3.9"
+buildpkg "mkinitcpio-openswap"
 
 echo "==== Arch Directory ====="
 ls -al repo/x86_64
-
-echo "==== Building mkinitcpio-openswap ====="
-cd repo/mkinitcpio-openswap && \
-makepkg -s --noconfirm && \
-mv *.pkg.tar.zst ../x86_64/
-
-pwd
-cd ../..
 
 # echo "==== Building ckbcomp ====="
 # cd repo/ckbcomp && \

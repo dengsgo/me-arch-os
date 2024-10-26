@@ -56,7 +56,7 @@ jobs:
           HOST: frs.sourceforge.net
           USER: mearch
           PASSWORD: ${{ secrets.RSYNC_PASSWORD }}
-          ARGS: -azv --exclude=/.git/ --exclude=/.github/
+          ARGS: -azv --delete --exclude=/.git/ --exclude=/.github/
           MODE: push
           SOURCE: repo/x86_64/
           TARGET: /home/frs/project/mearch/package/x86_64/
