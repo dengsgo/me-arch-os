@@ -130,10 +130,9 @@ zsh
 #######################################################
 base-devel
 python-pip
-#yay
-#alci-calamares
-#alci-calamares-config
 mearch-calamares
+icons-qogir
+cursor-bibata
 sddm
 bash-completion
 os-prober
