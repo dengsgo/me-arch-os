@@ -5,6 +5,14 @@ tar_target="mearch-os-repo.tar.gz"
 # repo arch directory
 mkdir -p repo/x86_64
 
+echo "==== Building cursor-bibata ====="
+cd repo/cursor-bibata && \
+makepkg -s --noconfirm && \
+mv *.pkg.tar.zst ../x86_64/
+
+pwd
+cd ../..
+
 echo "==== Building icons-qogir ====="
 cd repo/icons-qogir && \
 makepkg -s --noconfirm && \
