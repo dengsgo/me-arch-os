@@ -1,0 +1,20 @@
+# Maintainer: dengsgo <dengsgo[at]yoytang[dog]com>
+# resource page: https://github.com/vinceliuice/Qogir-icon-theme
+
+pkgname=icons-qogir
+pkgver=24.10.11
+pkgrel=3
+pkgdesc="A flat colorful design icon theme for linux desktops"
+arch=(any)
+license=('unknown')
+options=(!debug)
+url="https://github.com/vinceliuice/Qogir-icon-theme"
+depends=()
+source=('Qogir.tar.xz::https://sourceforge.net/projects/mearch/files/theme/Icons-01-Qogir-2024-10-11.tar.xz/download')
+sha256sums=('SKIP')
+
+package() {
+	#mkdir -p ${pkgdir}/usr/share/icons
+	#cp -rf ${srcdir}/Qogir ${pkgdir}/usr/share/icons/
+	install -Dmt 755 ${srcdir}/Qogir ${pkgdir}/usr/share/icons/
+}
