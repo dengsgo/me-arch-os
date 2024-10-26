@@ -1,0 +1,20 @@
+# Maintainer: dengsgo <dengsgo[at]yoytang[dog]com>
+# resource page: https://github.com/ful1e5/Bibata_Cursor
+
+pkgname=cursor-bibata
+pkgver=2.0.7
+pkgrel=1
+pkgdesc="An open source, compact, and material designed cursor set that aims to improve the cursor experience for users"
+arch=(any)
+license=('unknown')
+options=(!debug)
+url="https://github.com/ful1e5/Bibata_Cursor"
+depends=()
+source=('Bibata-Modern-Ice.tar.xz::https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/Bibata-Modern-Ice.tar.xz')
+sha256sums=('SKIP')
+
+package() {
+	mkdir -p ${pkgdir}/usr/share/icons
+	cp -rf ${srcdir}/Bibata-Modern-Ice ${pkgdir}/usr/share/icons/
+	chmod -R 755 ${pkgdir}/usr/share/icons
+}

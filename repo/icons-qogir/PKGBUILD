@@ -3,7 +3,7 @@
 
 pkgname=icons-qogir
 pkgver=24.10.11
-pkgrel=3
+pkgrel=1
 pkgdesc="A flat colorful design icon theme for linux desktops"
 arch=(any)
 license=('unknown')
