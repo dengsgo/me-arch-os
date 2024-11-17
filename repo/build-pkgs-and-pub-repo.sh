@@ -31,8 +31,9 @@ ls -al repo/x86_64
 # cd ../..
 
 echo "==== Download ckbcomp ====="
-sudo pacman -Sw --noconfirm ckbcomp
+sudo pacman -Sw --noconfirm ckbcomp microsoft-edge-stable-bin
 cp /var/cache/pacman/pkg/ckbcomp-*.pkg.tar.zst repo/x86_64/
+cp /var/cache/pacman/pkg/microsoft-edge-stable-bin-*.pkg.tar.zst repo/x86_64/
 
 echo "==== Arch Directory ====="
 ls -al repo/x86_64
