@@ -16,7 +16,7 @@ mkdir -p repo/x86_64
 
 buildpkg "cursor-bibata"
 buildpkg "icons-qogir"
-buildpkg "calamares-3.3.9"
+buildpkg "calamares"
 buildpkg "mkinitcpio-openswap"
 
 echo "==== Arch Directory ====="
