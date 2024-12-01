@@ -1,0 +1,12 @@
+NAME="Arch Linux"
+PRETTY_NAME="MeArch 24.12 - Arch Linux"
+DISTRIB_DESCRIPTION="Arch Linux is built and distributed by MeArch"
+ID=arch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://dengsgo.github.io/me-arch-os/"
+DOCUMENTATION_URL="https://wiki.archlinux.org/"
+SUPPORT_URL="https://bbs.archlinux.org/"
+BUG_REPORT_URL="https://gitlab.archlinux.org/groups/archlinux/-/issues"
+PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+LOGO=archlinux-logo

@@ -14,6 +14,7 @@ buildpkg() {
 # repo arch directory
 mkdir -p repo/x86_64
 
+buildpkg "mearch-os-release"
 buildpkg "cursor-bibata"
 buildpkg "icons-qogir"
 buildpkg "calamares"
