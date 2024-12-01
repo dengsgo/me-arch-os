@@ -10,6 +10,7 @@ license=('unknown')
 options=(!debug)
 url="https://github.com/dengsgo/me-arch-os"
 depends=()
+backup=('etc/os-release')
 source=('os-release')
 sha256sums=('SKIP')
 
