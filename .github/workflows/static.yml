@@ -44,6 +44,7 @@ jobs:
       - name: Version
         run: |
           sed -i "s/last_version/$(TZ='Asia/Shanghai' date +'%Y.%m')/g" docs/index.html
+          sed -i "s/downyyyymm/x86_64-$(TZ='Asia/Shanghai' date +'%Y.%m')/g" docs/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
