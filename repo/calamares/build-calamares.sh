@@ -13,7 +13,7 @@ echo "#########        Let us build the package "$(basename `pwd`)
 echo "#############################################################################################"
 tput sgr0
 
-#updpkgsums
+updpkgsums
 
 makepkg -s
 
