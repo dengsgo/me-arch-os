@@ -15,6 +15,7 @@ buildpkg() {
 mkdir -p repo/x86_64
 
 buildpkg "mearch-os-release"
+buildpkg "mearch-os-repo"
 buildpkg "cursor-bibata"
 buildpkg "icons-qogir"
 buildpkg "calamares"
