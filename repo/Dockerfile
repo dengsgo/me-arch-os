@@ -6,7 +6,7 @@ RUN pacman-key --init
 RUN echo '[archlinuxcn]' >> /etc/pacman.conf 
 RUN echo 'Server = https://repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
-RUN pacman -Sy --noconfirm --needed git sudo archlinuxcn-keyring
+RUN pacman -Sy --noconfirm --needed git sudo wget archlinuxcn-keyring
 # https://aur.chaotic.cx/docs
 RUN echo '[chaotic-aur]' >> /etc/pacman.conf 
 RUN echo 'SigLevel = Optional TrustAll' >> /etc/pacman.conf 
