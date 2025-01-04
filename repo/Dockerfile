@@ -4,7 +4,7 @@ RUN pacman-key --init
 #RUN pacman-key --lsign-key "lilac@build.archlinuxcn.org"
 #RUN echo 'Server = https://mirrors.cernet.edu.cn/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist 
 RUN echo '[archlinuxcn]' >> /etc/pacman.conf 
-RUN echo 'Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch' >> /etc/pacman.conf
+RUN echo 'Server = https://repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
 RUN pacman -Sy --noconfirm --needed git sudo archlinuxcn-keyring
 # https://aur.chaotic.cx/docs
