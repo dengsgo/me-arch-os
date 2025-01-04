@@ -33,7 +33,7 @@ ls -al repo/x86_64
 # cd ../..
 
 echo "==== Download ckbcomp ====="
-sudo pacman -Sw --noconfirm ckbcomp microsoft-edge-stable-bin
+sudo pacman -Sw --noconfirm ckbcomp microsoft-edge-stable-bin home_paul4us_Arch/klassy
 cp /var/cache/pacman/pkg/ckbcomp-*.pkg.tar.zst repo/x86_64/
 cp /var/cache/pacman/pkg/microsoft-edge-stable-bin-*.pkg.tar.zst repo/x86_64/
 

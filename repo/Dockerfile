@@ -12,6 +12,9 @@ RUN echo '[chaotic-aur]' >> /etc/pacman.conf
 RUN echo 'SigLevel = Optional TrustAll' >> /etc/pacman.conf 
 RUN echo 'Server = https://de-4-mirror.chaotic.cx/chaotic-aur/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
+RUN echo '[home_paul4us_Arch]' >> /etc/pacman.conf 
+RUN echo 'SigLevel = Optional TrustAll' >> /etc/pacman.conf 
+RUN echo 'Server = https://download.opensuse.org/repositories/home:/paul4us/Arch/$arch' >> /etc/pacman.conf
 RUN useradd -m -G wheel -s /bin/bash pkgbuilder
 RUN usermod -aG wheel pkgbuilder
 RUN echo '%wheel ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers
