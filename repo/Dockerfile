@@ -12,10 +12,6 @@ RUN echo '[chaotic-aur]' >> /etc/pacman.conf
 RUN echo 'SigLevel = Optional TrustAll' >> /etc/pacman.conf 
 RUN echo 'Server = https://de-4-mirror.chaotic.cx/chaotic-aur/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
-RUN echo '[home_paul4us_Arch]' >> /etc/pacman.conf 
-RUN echo 'Server = https://download.opensuse.org/repositories/home:/paul4us/Arch/$arch' >> /etc/pacman.conf
-RUN key=$(curl -fsSL https://download.opensuse.org/repositories/home:paul4us/Arch/$(uname -m)/home_paul4us_Arch.key) && fingerprint=$(gpg --quiet --with-colons --import-options show-only --import --fingerprint <<< "${key}" | awk -F: '$1 == "fpr" { print $10 }') && pacman-key --init && pacman-key --add - <<< "${key}" && pacman-key --lsign-key "${fingerprint}"
-RUN pacman -Syu --noconfirm
 RUN useradd -m -G wheel -s /bin/bash pkgbuilder
 RUN usermod -aG wheel pkgbuilder
 RUN echo '%wheel ALL=(ALL:ALL) NOPASSWD: ALL' >> /etc/sudoers

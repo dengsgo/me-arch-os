@@ -33,9 +33,11 @@ ls -al repo/x86_64
 # cd ../..
 
 echo "==== Download ckbcomp ====="
-sudo pacman -Sw --noconfirm ckbcomp microsoft-edge-stable-bin home_paul4us_Arch/klassy
+sudo pacman -Sw --noconfirm ckbcomp microsoft-edge-stable-bin
+curl -o /var/cache/pacman/pkg/klassy-6.2.breeze6.2.1-1-x86_64.pkg.tar.zst https://download.opensuse.org/repositories/home:/paul4us/Arch/x86_64/klassy-6.2.breeze6.2.1-1-x86_64.pkg.tar.zst
 cp /var/cache/pacman/pkg/ckbcomp-*.pkg.tar.zst repo/x86_64/
 cp /var/cache/pacman/pkg/microsoft-edge-stable-bin-*.pkg.tar.zst repo/x86_64/
+cp /var/cache/pacman/pkg/klassy-6.2.breeze6.2.1-1-x86_64.pkg.tar.zst repo/x86_64/
 
 echo "==== Arch Directory ====="
 ls -al repo/x86_64
