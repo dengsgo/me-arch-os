@@ -153,6 +153,8 @@ spectacle
 kate
 ark
 okular
+juk
+dragon
 partitionmanager
 firefox
 firefox-i18n-zh-cn
@@ -229,3 +231,5 @@ bluez
 bluedevil
 ########power###########
 power-profiles-daemon
+########theme###########
+klassy
