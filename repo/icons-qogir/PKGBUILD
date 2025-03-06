@@ -2,7 +2,7 @@
 # resource page: https://github.com/vinceliuice/Qogir-icon-theme
 
 pkgname=icons-qogir
-pkgver=24.12.01
+pkgver=25.02.06
 pkgrel=1
 pkgdesc="A flat colorful design icon theme for linux desktops"
 arch=(any)
@@ -10,7 +10,7 @@ license=('gpl')
 options=(!debug)
 url="https://github.com/vinceliuice/Qogir-icon-theme"
 depends=()
-source=('Qogir.tar.xz::https://sourceforge.net/projects/mearch/files/theme/Icons-01-Qogir-2024-12-01.tar.xz/download')
+source=('Qogir.tar.xz::https://sourceforge.net/projects/mearch/files/theme/Icons-01-Qogir-2025-02-06.tar.xz/download')
 sha256sums=('SKIP')
 
 package() {
