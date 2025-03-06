@@ -15,6 +15,6 @@ sha256sums=('SKIP')
 
 package() {
 	mkdir -p ${pkgdir}/etc/pacman.d
-	cp -rf ${srcdir}/mearch-mirrorlist ${pkgdir}/etc/pacman.d/
-	chmod -R 644 ${pkgdir}/etc/pacman.d/mearch-mirrorlist
+	#cp -rf ${srcdir}/mearch-mirrorlist ${pkgdir}/etc/pacman.d/
+	install -Dm644 ${srcdir}/mearch-mirrorlist ${pkgdir}/etc/pacman.d/mearch-mirrorlist
 }
