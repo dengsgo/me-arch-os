@@ -14,7 +14,8 @@ source=('viewer-20250406.zip::https://sourceforge.net/projects/mearch/files/pack
 sha256sums=('SKIP')
 
 package() {
-	mkdir -p ${pkgdir}/usr/lib/viewer
+	install -d "$pkgdir/usr/lib/viewer"
+	install -d "$pkgdir/usr/bin"
 	cp -rf ${srcdir}/bundle/* ${pkgdir}/usr/lib/viewer/
 	chmod -R 755 ${pkgdir}/usr/lib/viewer
 	chmod +x ${pkgdir}/usr/lib/viewer/viewer
