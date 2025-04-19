@@ -1,0 +1,22 @@
+# Maintainer: dengsgo <dengsgo[at]yoytang[dog]com>
+# resource page: https://github.com/vinceliuice/Qogir-icon-theme
+
+pkgname=viewer
+pkgver=25.04.06
+pkgrel=1
+pkgdesc="Graphics application engine, delivering powerful performance for MeArch OS"
+arch=('x86_64')
+license=('Apache 2')
+options=(!debug)
+url="https://github.com/dengsgo"
+depends=()
+source=('viewer-20250406.zip::https://sourceforge.net/projects/mearch/files/package/viewer-20250406.zip/download')
+sha256sums=('SKIP')
+
+package() {
+	mkdir -p ${pkgdir}/usr/lib/viewer
+	cp -rf ${srcdir}/bundle/* ${pkgdir}/usr/lib/viewer/
+	chmod -R 755 ${pkgdir}/usr/lib/viewer
+	chmod +x ${pkgdir}/usr/lib/viewer/viewer
+	ln -s "/usr/lib/viewer/viewer" "${pkgdir}/usr/bin/viewer"
+}

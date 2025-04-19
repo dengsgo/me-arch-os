@@ -14,11 +14,12 @@ buildpkg() {
 # repo arch directory
 mkdir -p repo/x86_64
 
+buildpkg "viewer"
 buildpkg "mearch-os-release"
 buildpkg "mearch-os-repo"
 buildpkg "cursor-bibata"
 buildpkg "icons-qogir"
-buildpkg "calamares"
+#buildpkg "calamares"
 buildpkg "mkinitcpio-openswap"
 
 echo "==== Arch Directory ====="
