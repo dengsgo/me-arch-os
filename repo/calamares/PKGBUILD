@@ -5,12 +5,12 @@
 
 pkgname=mearch-calamares
 _pkgname=calamares
-pkgver=3.3.13
-_pkgver=3.3.13
-_replaceversion=3.3.12
+pkgver=3.3.14
+_pkgver=3.3.14
+_replaceversion=3.3.13
 pkgrel=01
 _commit=9cc4cb3
-_tag=v3.3.13
+_tag=v3.3.14
 pkgdesc='Distribution-independent installer framework'
 arch=('i686' 'x86_64')
 license=(GPL)

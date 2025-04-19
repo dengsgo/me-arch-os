@@ -19,7 +19,7 @@ buildpkg "mearch-os-release"
 buildpkg "mearch-os-repo"
 buildpkg "cursor-bibata"
 buildpkg "icons-qogir"
-#buildpkg "calamares"
+buildpkg "calamares"
 buildpkg "mkinitcpio-openswap"
 
 echo "==== Arch Directory ====="
