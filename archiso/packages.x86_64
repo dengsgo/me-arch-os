@@ -197,7 +197,7 @@ network-manager-applet
 ##### xorg applications ####
 xorg-server
 xorg-apps
-neofetch
+fastfetch
 ####################kde discover###########################
 archlinux-appstream-data
 packagekit-qt6
