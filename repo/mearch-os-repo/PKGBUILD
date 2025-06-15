@@ -2,7 +2,7 @@
 # resource page: https://github.com/vinceliuice/Qogir-icon-theme
 
 pkgname=mearch-os-repo
-pkgver=24.12
+pkgver=25.06.05
 pkgrel=1
 pkgdesc="MeArch OS repo mirror list"
 arch=(any)
@@ -14,7 +14,6 @@ source=('mearch-mirrorlist')
 sha256sums=('SKIP')
 
 package() {
-	mkdir -p ${pkgdir}/etc/pacman.d
-	#cp -rf ${srcdir}/mearch-mirrorlist ${pkgdir}/etc/pacman.d/
-	install -Dm644 ${srcdir}/mearch-mirrorlist ${pkgdir}/etc/pacman.d/mearch-mirrorlist
+	install -d ${pkgdir}/etc/pacman.d
+	install -Dm644 "${srcdir}/mearch-mirrorlist" "$pkgdir/etc/pacman.d/mearch-mirrorlist"
 }
