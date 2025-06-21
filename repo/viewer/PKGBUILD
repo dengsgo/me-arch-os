@@ -9,7 +9,16 @@ arch=('x86_64')
 license=('Apache2.0')
 options=(!debug)
 url="https://github.com/dengsgo"
-depends=()
+depends=(
+	'gtk3'
+	'pango'
+	'cairo'
+	'harfbuzz'
+	'atk'
+	'gdk-pixbuf2'
+	'libepoxy'
+	'fontconfig'
+)
 source=('viewer-20250615.zip::https://sourceforge.net/projects/mearch/files/package/viewer-20250615.zip/download')
 sha256sums=('SKIP')
 
