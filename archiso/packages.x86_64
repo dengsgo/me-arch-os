@@ -141,9 +141,9 @@ os-prober
 dex
 libxinerama
 make
-xorg-xkill
+#xorg-xkill
 xterm
-xorg-xrdb
+#xorg-xrdb
 mkinitcpio-openswap
 
 plasma
@@ -195,8 +195,8 @@ lib32-pipewire-jack
 networkmanager
 network-manager-applet
 ##### xorg applications ####
-xorg-server
-xorg-apps
+#xorg-server
+#xorg-apps
 fastfetch
 ####################kde discover###########################
 archlinux-appstream-data
