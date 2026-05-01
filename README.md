@@ -17,7 +17,6 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - 一切（系统、组件和软件）都是滚动更新的  
 - 专注于 Kde Plasma 桌面和软件  
 - 专注于 Wayland   
-- 提供 Nvidia 专用驱动预置镜像，安装即用  
 - 特定国家和地区特殊优化，以更好适应用户习惯  
 
 --------  
@@ -30,14 +29,6 @@ A rolling distribution system based on Arch Linux, with a graphical interface fo
 - Focused on Kde Plasma desktop and software  
 - Focus on Wayland   
 - Country-specific and region-specific optimizations to better fit user habits  
-- Provides Nvidia-specific driver pre-installation images for immediate use 
-
-## TODO
-
-- MeArch Logo、Brand、Wallpaper(s) (欢迎 PR )  
-- 提供定制化的 MeArch 主题(欢迎 PR )  
-- Pre-installed mainland China source  
-- More
 
 
 ## Thanks & License
