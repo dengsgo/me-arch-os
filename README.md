@@ -1,6 +1,6 @@
 # MeArch
 
-[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildNvidiaISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![RepoBuild](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml/badge.svg)](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml)
+[![Download MeArch](https://img.shields.io/sourceforge/dt/mearch.svg)](https://sourceforge.net/projects/mearch/files/mearchiso/)  [![Actions](https://github.com/dengsgo/me-arch-os/workflows/BuildISO/badge.svg)](https://github.com/dengsgo/me-arch-os/actions)  [![RepoBuild](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml/badge.svg)](https://github.com/dengsgo/me-arch-os/actions/workflows/repo.yml)
 
 ## 基于 Arch Linux 的滚动发行版系统，使用图形化界面简易安装 Arch ! 
 
