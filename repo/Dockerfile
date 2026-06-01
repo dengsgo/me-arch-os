@@ -10,7 +10,7 @@ RUN pacman -Sy --noconfirm --needed git sudo wget archlinuxcn-keyring
 # https://aur.chaotic.cx/docs
 RUN echo '[chaotic-aur]' >> /etc/pacman.conf 
 RUN echo 'SigLevel = Optional TrustAll' >> /etc/pacman.conf 
-RUN echo 'Server = https://de-4-mirror.chaotic.cx/chaotic-aur/$arch' >> /etc/pacman.conf
+RUN echo 'Server = https://cdn-mirror.chaotic.cx/chaotic-aur/$arch' >> /etc/pacman.conf
 RUN pacman -Syu --noconfirm
 RUN useradd -m -G wheel -s /bin/bash pkgbuilder
 RUN usermod -aG wheel pkgbuilder
